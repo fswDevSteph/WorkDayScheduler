@@ -8,7 +8,7 @@ var formatDate = today.format('MMMM D, YYYY'); //Creates a variable"formatDate" 
 
 document.getElementById('currentDay').textContent = formatDate; // Grabs the HTML element with the id 'currentDay' and updates its text content with the formatted date stored in the variable "formatDate".
 
-/*HEN I scroll down
+/*WHEN I scroll down
 THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
 WHEN I view the timeblocks for that day
 THEN each timeblock is color coded to indicate whether it is in the past, present, or future
