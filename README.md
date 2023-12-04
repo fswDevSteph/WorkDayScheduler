@@ -4,17 +4,21 @@ A simple calendar application that allows a user to save events for each hour of
 
 ## Upcoming Iterations
 
-1.If there are future iterations of this project, it will expand to an entire 12 hour scheduler
+1. If there are future iterations of this project, it will expand to an entire 12 hour scheduler
 
-## Image of Quiz
+2. If used, potentially changing color scheme to fill user requirements
+
+## Image of Work Day Sheduler
 
 <img src="assets/workDayScheduler.png">
 
-## WorkDayScheduler Deployed:
+## WorkDayScheduler Repo:
 
-## WorkDayScheduler Repo: https://github.com/fswDevSteph/WorkDayScheduler
+https://github.com/fswDevSteph/WorkDayScheduler
 
-## Live link to project:
+## Link to deployed project:
+
+https://fswdevsteph.github.io/WorkDayScheduler/
 
 ## Installation instructions:
 
