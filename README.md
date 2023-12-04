@@ -6,7 +6,9 @@ A simple calendar application that allows a user to save events for each hour of
 
 1. If there are future iterations of this project, it will expand to an entire 12 hour scheduler
 
-2. If used, potentially changing color scheme to fill user requirements
+2. If there are future iterations of this project, it may condier expanding to a monthly planner that you can also plan each day of each month on a hourly basis.
+
+3. 2. If there are future iterations of this project, it will potentially change color scheme to fill user branding requirements
 
 ## Image of Work Day Sheduler
 

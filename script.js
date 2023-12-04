@@ -154,27 +154,49 @@ THEN the saved events persist */
 var saveBtns = document.getElementsByClassName('saveBtn'); // selects the element from HTML
 console.log(saveBtns);
 for (var i = 0; i < saveBtns.length; i++) {
-  saveBtns[i].addEventListener('click', function () {
-    var parentElement = this.parentElement;
-    // get parent element of button
+  console.log(localStorage.getItem(time));
 
-    var value = parentElement.querySelector('.description').value;
-    // get value from textarea with class 'description'
+  saveBtns[i].addEventListener('click', function () {
+    // saveBtns[i] is accessing the i of the savebtns array
+    // add.EventListener is attaching a click event to the selected element
+    //('click'is the event type its listening for
+    // function() is the function we will call from whats defined next in {}
+    var parentElement = this.parentElement;
+    // gets parent element of button
+    // .this refers to the element that triggered the event (in this case, the 'saveBtn' gets clicked)
+
+    var value = parentElement.querySelector('.usersInputForTimeBlock').value;
+    // gets value from textarea with class 'usersInputForTimeBlock'
 
     var time = parentElement.id;
-    // get the id attribute from the parent element
+    // gets the id attribute from the parent element
     console.log(value);
     console.log(time);
+
+    localStorage.setItem(time, value);
   });
 }
-// created a varaiable so logged it to see exactly what its doing. Its getting an array of html elements.
+
+for (var i = 9; i <= 17; i++) {
+  var hour = document.getElementById('hour-' + i);
+
+  var storedValue = localStorage.getItem('hour-' + i);
+
+  if (storedValue) {
+    hour.querySelector('.usersInputForTimeBlock').value = storedValue;
+  }
+}
+//Basically from line 180-193:
+//1. A loop iterates over hours 9-17
+//2. For each hour it retrieves the corresponding HTML element with the id of hour- insert corresponding hour number from 9-17
+// Then the stored value is retrieved from local storage and is set as the value for the textarea of the corresponding time block.
 
 /*var saveBtns = document.getElementsByClassName('saveBtn'); //selects the element fr html
 console.log(saveBtns);
 for (var i = 0; i < saveBtns.length; i++) {
   saveBtns[i].addEventListener('click', function () {
     //get paraent element of button
-    var value = $(this).siblings('.description').val();
+    var value = $(this).siblings('.usersInputForTimeBlock').val();
     var time = $(this).parent().attr('id');
     console.log(value);
     console.log(time);
