@@ -8,9 +8,9 @@ A simple calendar application that allows a user to save events for each hour of
 
 ## Image of Quiz
 
-<img src="assets/">
+<img src="assets/workDayScheduler.png">
 
-## WorkDayScheduler:
+## WorkDayScheduler Deployed:
 
 ## WorkDayScheduler Repo: https://github.com/fswDevSteph/WorkDayScheduler
 
