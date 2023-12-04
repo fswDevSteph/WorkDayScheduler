@@ -155,15 +155,14 @@ var saveBtns = document.getElementsByClassName('saveBtn'); // selects the elemen
 console.log(saveBtns);
 for (var i = 0; i < saveBtns.length; i++) {
   saveBtns[i].addEventListener('click', function () {
-    // get parent element of button
     var parentElement = this.parentElement;
+    // get parent element of button
 
-    // get value from textarea with class 'description' using vanilla JavaScript
     var value = parentElement.querySelector('.description').value;
+    // get value from textarea with class 'description'
 
-    // get the id attribute from the parent element
     var time = parentElement.id;
-
+    // get the id attribute from the parent element
     console.log(value);
     console.log(time);
   });
