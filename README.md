@@ -14,6 +14,10 @@ A simple calendar application that allows a user to save events for each hour of
 
 <img src="assets/workDayScheduler.png">
 
+## Video of Work Day Sheduler
+
+https://youtu.be/3y4QI1xF8i8
+
 ## WorkDayScheduler Repo:
 
 https://github.com/fswDevSteph/WorkDayScheduler

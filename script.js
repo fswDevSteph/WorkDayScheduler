@@ -154,7 +154,7 @@ THEN the saved events persist */
 var saveBtns = document.getElementsByClassName('saveBtn'); // selects the element from HTML
 console.log(saveBtns);
 for (var i = 0; i < saveBtns.length; i++) {
-  console.log(localStorage.getItem(time));
+  //console.log(localStorage.getItem(time));
 
   saveBtns[i].addEventListener('click', function () {
     // saveBtns[i] is accessing the i of the savebtns array
